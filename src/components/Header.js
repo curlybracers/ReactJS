@@ -16,7 +16,7 @@ class Header extends Component {
         return(
             <header>
                 <p className="righttext">Type Something in the text box</p>
-                <input type = "text" onChange = {this.ChangeEvent}/>
+                <input type = "text" onChange = {this.ChangeEvent.bind(this)}/>
                 <div>{this.state.title}</div>
             </header>
         )

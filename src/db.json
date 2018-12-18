@@ -1,0 +1,28 @@
+[
+    {
+        "id":1,
+        "firstName":"Shobhit",
+        "lastName":"Srivastav"
+    },
+    {
+        "id":2,
+        "firstName":"Rahul",
+        "lastName":"Bhandari"
+    },
+    {
+        "id":3,
+        "firstName":"Abhinandan",
+        "lastName":"Tripathi"
+    },
+    {
+        "id":4,
+        "firstName":"Kumar",
+        "lastName":"Abhishek"
+    },
+    {
+        "id":5,
+        "firstName":"Sunil",
+        "feed":"Singh"
+    }
+
+]
