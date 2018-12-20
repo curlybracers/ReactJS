@@ -10,14 +10,21 @@ class App extends Component {
     constructor(props){
         super(props)
         this.state = {
-            news:jsonData
+            news:jsonData,
+            filtered:jsonData
         }
+    }
+    filterData(data){
+        let result = this.state.news.filter((item) => {
+            return item.firstName.toLowerCase().indexOf(data.toLowerCase()) > -1;
+        })
+        this.setState({filtered:result})
     }
     render(){
         return(
             <div className="wrapper">
-                <Header/>
-                <Newslist sendNews={this.state.news}/>
+                <Header serachKeyword={(data) => {this.filterData(data)}}/>
+                <Newslist sendNews={this.state.filtered}/>
             </div>
          )    
     }

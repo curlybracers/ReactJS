@@ -8,7 +8,7 @@ const Newslist = (props) => {
     )
 })
     return(
-        <div>{items}</div>
+        <div className = "container">{items}</div>
     )
 }
 
